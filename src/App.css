@@ -1,32 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 .header {
-    background-image: url("./assets/bridge.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+  background-image: url("./assets/bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 .header > .layer > div {
-    /* margin-left: auto; */
-    border: 1px solid black;
-
+  /* margin-left: auto; */
+  border: 1px solid black;
 }
 
 .layer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: rgba(78, 78, 78, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: rgba(78, 78, 78, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.header > .header-copy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header > .layer > .header-copy {
+  /* top right bottom left */
+  padding: 200px 50px 75px 100px;
+  color: #19ade6;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header > .layer > .header-copy > h5 {
     color: white;
+}
+
+.header > .layer > .header-copy > button {
+  background-color: #19ade6;
+  border: none;
+  color: white;
+  /* top right bottom left */
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
 }

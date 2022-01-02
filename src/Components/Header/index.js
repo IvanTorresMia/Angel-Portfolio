@@ -9,6 +9,7 @@ const Header = () => {
           <h5>This is where you life changes</h5>
           <h1>Personal Training with Angel Torres</h1>
           <h2>Let me help you reach your fitness goals</h2>
+          <button>Get Started</button>
         </div>
       </div>
     </div>
