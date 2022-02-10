@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+:root {
+  --primary-blue: #19ade6;
+  --primary-black: rgba(78, 78, 78, 0.7);
+  --primary-white: #fbfbfb;
+}
+
+/* ******************** Nav ******************** */
+nav {
+  /* top right bottom left */
+  padding: 30px 0px 30px 30px;
+}
+.navbar > .container-fluid > .collapse {
+  margin-left: 65%;
+}
+
+.navbar-nav > a {
+  color: var(--primary-white) !important;
+}
+
+@media only screen and (max-width: 1450px) {
+  .navbar > .container-fluid > .collapse {
+    margin-left: 55%;
+  }
+}
+
+/* ******************** Header ******************** */
+.header {
+  background-image: url("./assets/personal-training.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.layer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: var(--primary-black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header > .layer > .header-copy {
+  /* top right bottom left */
+  padding: 200px 150px 75px 80px;
+  color: var(--primary-blue);
+  line-height: 3;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header > .layer > .header-copy > h5 {
+  color: var(--primary-white);
+  /* font-weight: bold; */
+}
+
+.header > .layer > .header-copy > h1 {
+  font-weight: bold;
+}
+
+.header > .layer > .header-copy > button {
+  background-color: var(--primary-blue);
+  border: none;
+  color: var(--primary-white);
+  /* top right bottom left */
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+}
+
+/* ******************** Programs ******************** */
+
+.programs {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.programs-wrapper > h1 {
+  margin: 50px 0px 50px 0px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  text-align: center;
+}
+
+.programs > div {
+  border: 1.5px solid var(--primary-blue);
+  background-color: var(--primary-white);
+  margin: auto;
+  margin-bottom: 60px;
+  /* top right bottom left */
+  padding: 50px 70px 75px 70px;
+  height: 500px;
+  width: 400px;
+}
+
+.programs > div > h2 {
+  color: var(--primary-blue);
+}
+.programs > div > button {
+  color: var(--primary-blue);
+  outline: 1px solid var(--primary-blue);
+  border: none;
+  background-color: var(--primary-white);
+  border-radius: 20px;
+  /* top right bottom left */
+  padding: 10px 20px 10px 20px;
+  transition: 0.3s;
+}
+
+.programs > div > button:hover {
+  color: var(--primary-white);
+  outline: 1px solid var(--primary-white);
+  background-color: var(--primary-blue);
+  transition: 0.3s;
+}
+
+.programs > div > ul > li {
+  font-size: 14px;
+}
+
+/* ******************** Contact ******************** */
+
+.contact-wrapper > form {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  /* top right bottom left */
+  padding: 5% 25% 5% 25%;
+}
+
+.contact-wrapper > form > h1 {
+  margin-bottom: 20px;
+  color: var(--primary-blue);
+}
+
+.contact-wrapper > form > button {
+  width: 80px;
+  margin-left: auto;
+  border: none;
+  color: var(--primary-blue);
+  background-color: var(--primary-white);
+  outline: 1px solid var(--primary-blue);
+  border-radius: 20px;
+  /* top right bottom left */
+  padding: 10px 20px 10px 20px;
+  transition: 0.3s;
+}
+
+.contact-wrapper > form > button:hover {
+  color: var(--primary-white);
+  outline: 1px solid var(--primary-white);
+  background-color: var(--primary-blue);
+  transition: 0.3s;
+}
+
+.contact-wrapper > form > input,
+.contact-wrapper > form > textarea {
+  border: none;
+  outline: 1px solid var(--primary-blue);
+}
+.contact-wrapper > form > label {
+  margin-bottom: 10px;
+  color: var(--primary-black);
+}
+
+/* ******************** Footer ******************** */
+
+.footer {
+  /* margin-top: 3%; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+.react-footer {
+  text-align: center;
+}
+
+.react-footer h3 {
+  font-size: 1.2rem !important;
+}
+
+.react-footer img {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.react-footer img:hover {
+  width: 2rem;
+}
