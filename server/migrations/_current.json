@@ -1,0 +1,107 @@
+{
+    "tables": {
+        "applicants": {
+            "tableName": "applicants",
+            "schema": {
+                "ApplicantId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "ApplicantId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "FirstName": {
+                    "field": "FirstName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "LastName": {
+                    "field": "LastName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "PhoneNumber": {
+                    "field": "PhoneNumber",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Height": {
+                    "field": "Height",
+                    "seqType": "Sequelize.STRING"
+                },
+                "weight": {
+                    "field": "weight",
+                    "seqType": "Sequelize.STRING"
+                },
+                "GoalWeight": {
+                    "field": "GoalWeight",
+                    "seqType": "Sequelize.STRING"
+                },
+                "GoalDescription": {
+                    "field": "GoalDescription",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Program": {
+                    "field": "Program",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "UserId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "UserId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "FirstName": {
+                    "field": "FirstName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "LastName": {
+                    "field": "LastName",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Password": {
+                    "field": "Password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Email": {
+                    "unique": true,
+                    "field": "Email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "Admin": {
+                    "defaultValue": {
+                        "value": false
+                    },
+                    "field": "Admin",
+                    "seqType": "Sequelize.BOOLEAN"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}
