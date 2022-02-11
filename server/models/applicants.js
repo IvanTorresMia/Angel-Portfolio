@@ -1,7 +1,7 @@
 "use strict";
 module.exports = (sequelize, DataTypes) => {
   const applicants = sequelize.define(
-    "applicant",
+    "applicants",
     {
       ApplicantId: {
         type: DataTypes.INTEGER,
