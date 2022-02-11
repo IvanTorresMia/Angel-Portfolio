@@ -16,8 +16,8 @@ export const ProgramsProvider = (props) => {
 
     };
 
-    function addOrCreateUser(user) {
-        
+    function getUser(user) {
+
     }
 
     
@@ -31,7 +31,7 @@ export const ProgramsProvider = (props) => {
         <ProgramsContext.Provider
             value={{
                 addApplicant,
-                addOrCreateUser
+                getUser
             }}
         >
             {props.children}
