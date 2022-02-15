@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
       },
       FirstName: DataTypes.STRING,
       LastName: DataTypes.STRING,
@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     {}
   );
-  users.associate = function(models) {
+  users.associate = function (models) {
     // associations can be defined here
   };
-  return users; 
+  return users;
 };

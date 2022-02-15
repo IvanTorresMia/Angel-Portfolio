@@ -9,6 +9,7 @@ import Moderate from "./Components/ProgramPages/Moderate";
 import BeastMode from "./Components/ProgramPages/BeastMode";
 import Beginner from "./Components/ProgramPages/Beginner";
 import AdminLogIn from "./Admin/AdminLogIn/AdminLogIn";
+import SignUp from "./Components/SIgnUp/SignUp";
 import AdminProfile from "./Admin/AdminProfile/AdminProfile";
 import AdminHome from "./Admin/AdminHome/AdminHome";
 
@@ -27,8 +28,10 @@ function App() {
           <Route path="beast-mode" element={<BeastMode />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<AdminLogIn />} />
+          <Route path="signup" element={<SignUp />} />
         </Route>
         <Route path="admin" element={<AdminHome />}>
+          {/* <Route index element={<h1> you need to login </h1>} /> */}
           <Route index element={<AdminProfile />} />
         </Route>
       </Routes>
